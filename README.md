@@ -1,8 +1,7 @@
-# excellent-watir
-Prototype ruby/watir testing framework. Test steps defined in Excel spreadsheet
-
 # Introduction
-excellent-watir (herein called 'xlwatir') is a framework designed to speed up automated testing of Web applications. It allows testers to rapidly build test scripts and test suites in a structured way. xlwatir provides all the power of the popular “watir” tool but without the overhead of learning the Ruby language. xlwatir may be used by testers of all skill levels. Test scripts may range from a simple single file, to a suite of complex tests with custom functionality. 
+excellent-watir (herein called 'xlwatir') was a prototype ruby/watir testing framework, with test steps defined in Excel spreadsheets.
+
+xlwatir was designed to speed up automated testing of Web applications. It allows testers to rapidly build test scripts and test suites in a structured way. xlwatir provides all the power of the popular “watir” tool but without the overhead of learning the Ruby language. xlwatir may be used by testers of all skill levels. Test scripts may range from a simple single file, to a suite of complex tests with custom functionality. 
 
 ## Prerequisites
 Ruby, watir, Excel
@@ -43,15 +42,17 @@ Some other commands available are
 
 This is an example of a completed script:
 
-    | import	| BaseCommandsWatir.rb	| BaseCommandsWatir | 
-    | pause_message	| This is a sample message to pause the script. Hit OK to continue.|	| 
-    | comment	| "xlwatir" Scripting Template + Example |	| 
-    | goto_url	| google.co.nz |	|
-    | input_text_by_name	| q	| apteryx australis |
-    | click_button_by_name	| btnG |	|
-    | verify_text_on_page	| South Island Kiwi |	|
-    | verify_text_on_page	| Apteryx Australis |	|
-    | comment | Finished googly example. |	|
+| command	| param_1	| param_2 | 
+| ------ | ------ | ------ | 
+| import	| BaseCommandsWatir.rb	| BaseCommandsWatir | 
+| pause_message	| This is a sample message to pause the script. Hit OK to continue.|	| 
+| comment	| "xlwatir" Scripting Template + Example |	| 
+| goto_url	| google.co.nz |	|
+| input_text_by_name	| q	| apteryx australis |
+| click_button_by_name	| btnG |	|
+| verify_text_on_page	| South Island Kiwi |	|
+| verify_text_on_page	| Apteryx Australis |	|
+| comment | Finished googly example. |	|
  
 
 ## Running / Testing the Script
@@ -101,7 +102,7 @@ The second time it is called, “demo_W3_search.xls” replaces %1% with “w3.o
     verify_text_on_page	from www.w3.org	
     comment	finished search	
 
-# 5 Architecture of xlwatir 
+# Architecture of xlwatir 
  
 The classes are defined in Ruby source files:
 * Main.rb contains classes TestRunner and ScriptRunner. Main.rb is the main xlwatir executable file.
