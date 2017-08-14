@@ -43,15 +43,15 @@ Some other commands available are
 
 This is an example of a completed script:
 
-| import	| BaseCommandsWatir.rb	| BaseCommandsWatir
-| pause_message	| This is a sample message to pause the script. Hit OK to continue.|	| 
-| comment	| "xlwatir" Scripting Template + Example |	| 
-| goto_url	| google.co.nz |	|
-| input_text_by_name	| q	| apteryx australis |
-| click_button_by_name	| btnG |	|
-| verify_text_on_page	| South Island Kiwi |	|
-| verify_text_on_page	| Apteryx Australis |	|
-| comment | Finished googly example. |	|
+    | import	| BaseCommandsWatir.rb	| BaseCommandsWatir | 
+    | pause_message	| This is a sample message to pause the script. Hit OK to continue.|	| 
+    | comment	| "xlwatir" Scripting Template + Example |	| 
+    | goto_url	| google.co.nz |	|
+    | input_text_by_name	| q	| apteryx australis |
+    | click_button_by_name	| btnG |	|
+    | verify_text_on_page	| South Island Kiwi |	|
+    | verify_text_on_page	| Apteryx Australis |	|
+    | comment | Finished googly example. |	|
  
 
 ## Running / Testing the Script
